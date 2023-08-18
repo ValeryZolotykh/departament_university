@@ -20,25 +20,25 @@ export class NewsComponent {
       title: 'Заразок новини',
       date: '01.01.2023',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatum nihil vel beatae nemo placeat exercitationem non, quam quas aperiam quae officia quibusdam facilis! Excepturi quos hic maxime repellat reiciendis!',
-      img: '../../../../assets/img/news/news1.jpg',
+      img: 'assets/img/news/news1.jpg',
     },
     {
       title: 'Заразок новини',
       date: '01.01.2023',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatum nihil vel beatae nemo placeat exercitationem non, quam quas aperiam quae officia quibusdam facilis! Excepturi quos hic maxime repellat reiciendis!',
-      img: '../../../../assets/img/news/news1.jpg',
+      img: 'assets/img/news/news1.jpg',
     },
     {
       title: 'Заразок новини',
       date: '01.01.2023',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatum nihil vel beatae nemo placeat exercitationem non, quam quas aperiam quae officia quibusdam facilis! Excepturi quos hic maxime repellat reiciendis!',
-      img: '../../../../assets/img/news/news1.jpg',
+      img: 'assets/img/news/news1.jpg',
     },
     {
       title: 'Заразок новини',
       date: '01.01.2023',
       text: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde voluptatum nihil vel beatae nemo placeat exercitationem non, quam quas aperiam quae officia quibusdam facilis! Excepturi quos hic maxime repellat reiciendis!',
-      img: '../../../../assets/img/news/news1.jpg',
+      img: 'assets/img/news/news1.jpg',
     },
   ];
 
