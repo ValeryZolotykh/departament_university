@@ -20,15 +20,15 @@ export class LaboratoriesComponent {
   }
 
   slides = [
-    { image: '../../../../assets/img/laboratories/408_1.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/408_2.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/408.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/415_1.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/415_2.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/415_3.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/415_4.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/415.jpg', text: '' },
-    { image: '../../../../assets/img/laboratories/416a.jpg', text: '' },
+    { image: 'assets/img/laboratories/408_1.jpg', text: '' },
+    { image: 'assets/img/laboratories/408_2.jpg', text: '' },
+    { image: 'assets/img/laboratories/408.jpg', text: '' },
+    { image: 'assets/img/laboratories/415_1.jpg', text: '' },
+    { image: 'assets/img/laboratories/415_2.jpg', text: '' },
+    { image: 'assets/img/laboratories/415_3.jpg', text: '' },
+    { image: 'assets/img/laboratories/415_4.jpg', text: '' },
+    { image: 'assets/img/laboratories/415.jpg', text: '' },
+    { image: 'assets/img/laboratories/416a.jpg', text: '' },
   ];
 
   ngOnInit() {
