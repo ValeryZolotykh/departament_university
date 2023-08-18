@@ -1,0 +1,129 @@
+/* VIDGUKI */
+.vidguki__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.vidguki__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.vidguki__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.vidguki__content{
+    margin-top: 50px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.vidguki__item{
+    height: auto;
+    border-radius: 30px;
+    border: 1px solid rgb(180, 180, 180);
+    margin-bottom: 70px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.vidguki__item--title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.vidguki__item--subtitle{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+.vidguki__photo{
+    float: left;
+    width: 35%;
+    height: auto;
+    padding: 15px;
+}
+
+.vidguki__item--text{ 
+    text-indent: 0%;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1440px) {
+}
+
+@media only screen and (max-width: 1024px) {
+    .vidguki__title{
+        font-size: 35px;
+    }
+
+    .vidguki__subtitle{
+        font-size: 23px;
+    }
+
+    .vidguki__item--title{
+        font-size: 29px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .vidguki__title{
+        font-size: 30px;
+    } 
+
+    .vidguki__item--title{
+        font-size: 25px;
+    }
+
+    .vidguki__item--subtitle{
+        font-size: 17px;
+    }
+
+    .vidguki__photo{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .vidguki__wrapper{
+        width: 95%;
+    }
+
+    .vidguki__photo{
+        float: none;
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .vidguki__item--title{
+        font-size: 27px;
+    }
+
+    .vidguki__item--subtitle{
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .vidguki__content{
+        font-size: 17px;
+    }
+
+    .vidguki__item{
+        margin-bottom: 30px;
+    }
+
+    .vidguki__item{
+        padding: 10px;
+    }
+}
+

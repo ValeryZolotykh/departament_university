@@ -1,0 +1,82 @@
+/* MAGISTR */
+.magistr__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.magistr__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.magistr__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.magistr__content{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 20px;
+}
+
+.magistr__item{
+    margin-bottom: 30px;
+}
+
+.magistr__item--list{
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.magistr__item--point{
+   color: rgb(0, 183, 0);
+}
+
+.magistr__link{
+    color: var(--hover_link);
+    font-weight: 600;
+}
+
+.magistr__link:hover{
+    text-decoration: underline;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .magistr__title{
+        font-size: 35px;
+    }
+
+    .magistr__subtitle {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .magistr__title{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .magistr__wrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .magistr__content{
+        font-size: 17px;
+    }
+
+    .magistr__item--list{
+        margin-left: 10px;
+    }
+}

@@ -1,0 +1,34 @@
+<!--HEADER -->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<section class="vidguki">
+  <div class="wrapper vidguki__wrapper">
+    <h1 class="title vidguki__title">Відгуки</h1>
+    <hr class="vidguki__hr" />
+    <h2 class="title vidguki__subtitle">Кафедри КСУ</h2>
+
+    <div class="content vidguki__content">
+      <div class="vidguki__items">
+        <!-- <div class="vidguki__item" *ngFor="let vidguk of vidguki$ | async"> -->
+        <div class="vidguki__item" *ngFor="let vidguk of vidguki">
+          <img class="vidguki__photo" [src]="vidguk.img" />
+          <h2 class="title vidguki__item--title">{{ vidguk.name }}</h2>
+          <h3 class="vidguki__item--subtitle"></h3>
+          <div class="text vidguki__item--text">
+            <p>
+              {{ vidguk.text }}
+            </p>
+            <br />
+            <p>
+              <strong>{{ vidguk.work }} </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<app-footer></app-footer>

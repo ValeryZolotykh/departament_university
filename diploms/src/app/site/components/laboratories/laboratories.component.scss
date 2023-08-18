@@ -1,0 +1,142 @@
+/* LABORATORIES */
+.laboratories__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.laboratories__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.laboratories__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.laboratories__content{
+    margin-top: 50px;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+.laboratories__photo{
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.laboratories__menu-items{
+    list-style: disc;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.laboratories__menu-item{
+    margin-bottom: 15px;
+    color: var(--main_color);
+}
+
+.laboratories__menu-item:hover{
+    transition: 0.6s;
+    text-decoration: underline;
+    color: var(--hover_link);
+}
+
+.laboratories__item{
+    margin-bottom: 50px;
+}
+
+.laboratories__item--subtitle{
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.laboratories__image{
+    width: 100%;
+    height: auto;
+    border-radius: 25px;
+}
+
+.laboratories__image--scheme{
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.laboratories__image-description{
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.laboratories__video{
+    width: 100%;
+    height: 400px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .laboratories__title{
+        font-size: 35px;
+    }
+
+    .laboratories__subtitle{
+        font-size: 23px;
+    }
+
+    .laboratories__video{
+        height: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .laboratories__title{
+        font-size: 30px;
+    }
+
+    .laboratories__video{
+        height: 200px;
+    }
+
+    .laboratories__item--subtitle{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+   
+    .laboratories__wrapper{
+        width: 95%;
+    }
+
+    .laboratories__item--subtitle{
+        font-size: 23px;
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .laboratories__content{
+        font-size: 17px;
+    }
+
+    .laboratories__text{
+        line-height: 21px;
+    }
+
+    .laboratories__image-description{
+        font-size: 13px;
+    }
+
+    .laboratories__image--scheme{
+        width: 95%;
+    }
+}

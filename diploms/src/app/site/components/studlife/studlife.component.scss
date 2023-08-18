@@ -1,0 +1,93 @@
+/* STUD LIFE */
+.studlife__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.studlife__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.studlife__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.studlife__content{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.studlife__item{
+    margin-bottom: 50px;
+}
+
+.studlife__item--gallery{
+    display: flex;
+    justify-content: space-around;
+}
+
+.studlife__photo{
+    border-radius: 30px;
+    width: 30%;
+}
+
+.studlife__link{
+    text-decoration: underline;
+    color: var(--hover_link);
+    font-weight: bolder;
+}
+
+.studlife__list{
+    list-style: disc;
+}
+
+.studlife__list--item{
+    margin-bottom: 20px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .studlife__title{
+        font-size: 35px;
+    }
+
+    .studlife__subtitle {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .studlife__title{
+        font-size: 30px;
+    }
+
+    .studlife__item--gallery{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .studlife__photo{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .studlife__wrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .content{
+        font-size: 17px;
+    }
+}

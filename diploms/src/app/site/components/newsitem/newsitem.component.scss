@@ -1,0 +1,134 @@
+/* NEWS */
+.news-item__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    padding-right: 50px;
+}
+
+.news-item__title{
+    margin-top: 50px;
+    padding-top: 50px;
+    font-size: 40px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+}
+
+.news-item__content{
+    margin-left: 35px;
+}
+
+.news-item__photo{
+    width: 100%;
+    height: auto;
+    max-width: 800px; /* Adjust the maximum width as per your requirements */
+    margin: 0 auto; 
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.news-item__img{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.news-item__date{
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.news-item__text{
+    margin-bottom: 20px;
+    text-indent: 5%;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .news-item__title{
+        font-size: 30px;
+    }
+
+    .news-item__photo{
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .news-item__title{
+        padding-top: 35px;
+        font-size: 25px;
+    }
+
+    .news-item__date{
+        font-size: 13px;
+    }
+
+    .news-item__text{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .news-item__wrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .news-item__wrapper{
+        padding-right: 15px;
+    }
+
+    .news-item__title{
+        margin-left: 25px;
+    }
+
+    .news-item__content{
+        margin-left: 25px;
+    }
+
+    .news-item__text{
+        margin-bottom: 5px;
+        line-height: 25px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .news-item__wrapper{
+        padding-bottom: 25px;
+        margin-bottom: 30px;
+    }
+
+    .news-item__content{
+        margin-left: 20px;
+    }
+
+    .news-item__title{
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .news-item__photo{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .news-item__title{
+        margin-left: 10px;
+        padding-top: 17px;
+    }
+
+    .news-item__content{
+        margin-left: 10px;
+    }
+}

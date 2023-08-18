@@ -1,0 +1,130 @@
+<!--HEADER-->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<main>
+  <!--INTRO-->
+  <section class="intro">
+    <div class="wrapper intro__wrapper">
+      <h1 class="title intro__title">
+        Кафедра комп'ютерізованих систем управління
+      </h1>
+    </div>
+  </section>
+
+  <!--BUTTON FOR FEEDBACK-->
+  <a routerLink="/feedback"
+    ><div class="contact-us">
+      <img src="../../../../assets/img/phone.png" class="logo-phone" /></div
+  ></a>
+
+  <!--STATISTICS-->
+  <section class="statistics">
+    <div class="wrapper statistics__wrapper">
+      <div class="statistics__item">
+        <h1 class="title statistics__title">210 м²</h1>
+        <p>площа лабораторій</p>
+      </div>
+      <div class="statistics__item">
+        <h1 class="title statistics__title">70+</h1>
+        <p>научних розробіток</p>
+      </div>
+      <div class="statistics__item">
+        <h1 class="title statistics__title">1000+</h1>
+        <p>щасливих студентів</p>
+      </div>
+    </div>
+  </section>
+
+  <!--DEPARTAMENT-->
+  <section class="departament">
+    <div class="wrapper departament__wrapper">
+      <h1 class="title departament__title">
+        174 «Автоматизація, комп’ютерно-інтегровані технології та робототехніка»
+      </h1>
+      <p class="departament__text">
+        Пориньте у майбутнє виробництва з нашою програмою «Автоматизація та
+        комп'ютерно-інтегровані технології», розробленою, щоб озброїти вас
+        навичками та знаннями, необхідними для досягнення успіху у світі,
+        керованому технологіями<br /><br />
+        Освітньо-професійна програма
+        <strong
+          >«Комп’ютерно-інтегровані технології та системи автоматизації»
+        </strong>
+        гарантує:<br /><br />
+        ● знання та навички у сфері ІТ та автоматизації;<br /><br />
+        ● зв'язок з провідними ІТ-компаніями та підприємствами;<br /><br />
+        ● спеціальність підтримується державою шляхом заохочення попиту на неї,
+        як-то: <br /><br />
+        1. <strong>прохідний бал на бюджет значно менший</strong> (на 10-20
+        балів), ніж на інші спеціальності ІТ-сфери (12-та галузь); <br />
+        2. до конкурсного балу враховується
+        <strong>галузевий коефіцієнт 1,02</strong> (при виборі за 1 чи 2
+        пріоритетом);<br />
+        3. на контрактній формі вартість навчання -
+        <strong>7200 грн. за семестр</strong> вступ за співбесідою чи
+        мотиваційним листом (станом на 2023 р.).<br />
+        <br />
+        Запрошуємо на навчання для здобуття освітніх рівнів «Бакалавр»,
+        «Магістр», «PhD».<br />
+        Подробиці тут -
+        <a
+          class="link departament__link"
+          routerLink="/abiturient"
+          target="_blank"
+          >Aбітурієнту</a
+        >
+      </p>
+    </div>
+  </section>
+
+  <!-- DEPARTAMENT-VIDEO -->
+  <section class="departament-video">
+    <div class="wrapper departament-video__wrapper">
+      <iframe
+        class="departament-video__media"
+        src="https://www.youtube.com/embed/yb0lp60gt98?start=3"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      ></iframe>
+    </div>
+  </section>
+
+  <!--PARTHER-->
+  <section class="parther">
+    <div class="wrapper parther__wrapper">
+      <h1 class="title parther__title">Екслюзивний партнер кафедри КСУ</h1>
+      <div class="parther__photo">
+        <a href="https://geeksforless.com/" target="_blank"
+          ><img
+            class="logo-GFL"
+            src="../../../../assets/img/Geeksforless_logo.png"
+            alt="logo_parther_geekForLess"
+        /></a>
+      </div>
+      <p class="parther__text">
+        Навчальний план підготовки бакалаврів розроблено згідно з вимогами
+        провідної міжнародної компанії в сфері ІТ GeeksForLess (HostingMaks, м.
+        Миколаїв)
+      </p>
+    </div>
+  </section>
+
+  <!--ABOUT US-->
+  <section class="about-us">
+    <div class="wrapper about-us__wrapper">
+      <carousel class="about-us__carousel" [isAnimated]="true">
+        <slide *ngFor="let slide of slides; let index = index">
+          <img class="about-us__photo" [src]="slide.image" alt="image slide" />
+          <div class="carousel-caption about-us__photo-subtitle">
+            <p>{{ slide.text }}</p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </section>
+
+  <!-- FOOTER-->
+  <app-footer></app-footer>
+</main>

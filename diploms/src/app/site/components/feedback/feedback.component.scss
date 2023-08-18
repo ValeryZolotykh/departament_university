@@ -1,0 +1,159 @@
+/* FEEDBACK */
+.feedback__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.feedback__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.feedback__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.feedback__content{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.feedback__link{
+    font-weight: bold;
+    color: var(--hover_link);
+}
+
+.feedback__forma{
+    margin: 20px auto;
+    border: 2px rgb(187, 187, 187) solid;
+    padding: 30px;
+    border-radius: 20px;
+    width: 350px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feedback__input{
+    margin-bottom: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.feedback__errors{
+    background-color: rgba(219, 0, 0, 0.866);
+    color: aliceblue;
+    text-align: center;
+    border-radius: 5px;
+    margin-top: -16px;
+    margin-bottom: 5px;
+}
+
+.invalid-input {
+    outline: 2px solid rgb(255, 0, 0);
+    border-color: rgb(255, 0, 0); 
+}
+
+.feedback__questions{
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 300px;
+    height: 500px;
+}
+
+.feedback__btn{
+    background-color: var(--main_color);
+    color: white;
+    margin-bottom: 20px;
+}
+
+.feedback__notificition--success{
+    display: none;
+    background-color: rgba(0, 255, 8, 0.242);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.feedback__notificition--fail{
+    display: none;
+    background-color: rgba(255, 0, 0, 0.242);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+     .feedback__title{
+        font-size: 35px;
+    }
+
+    .feedback__subtitle {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .feedback__title{
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .feedback__wrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .feedback__content{
+        font-size: 16px;
+    }
+
+    .feedback__forma{
+        margin: 10px auto;
+        padding: 15px;
+        width: 280px;
+    }
+
+    .feedback__questions{
+        width: 250px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .feedback__forma{
+        width: 230px;
+    }
+
+    .feedback__questions{
+        width: 210px;
+        height: 70px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .feedback__content{
+        margin-top: 50px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .feedback__forma{
+        width: 100%;
+        border: 0;
+    }
+
+    .feedback__input, .feedback__questions{
+        width: 100%;
+    }
+}

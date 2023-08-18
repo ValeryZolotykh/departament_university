@@ -1,0 +1,44 @@
+<!--HEADER -->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<section class="kafedra">
+  <div class="wrapper kafedra__wrapper">
+    <h1 class="title kafedra__title">Співробітники</h1>
+    <hr class="kafedra__hr" />
+    <h2 class="title kafedra__subtitle">Кафедри КСУ</h2>
+
+    <div class="content kafedra__content">
+      <div class="kafedra__items">
+        <div class="kafedra__item" *ngFor="let spivrobitnik of kafedra">
+          <!-- *ngFor="let spivrobitnik of spivrobitniki$ | async" -->
+          <img class="kafedra__photo" [src]="spivrobitnik.img" />
+          <h2 class="title kafedra__item--title">
+            {{ spivrobitnik.name }}
+          </h2>
+          <h3 class="kafedra__item--subtitle">
+            {{ spivrobitnik.position }}
+          </h3>
+          <div class="text kafedra__item--text">
+            <p>
+              {{ spivrobitnik.text }}
+            </p>
+            <br />
+            <p>
+              <strong>Викладає дисципліни: </strong>
+              {{ spivrobitnik.discipline }}
+            </p>
+            <br />
+            <p>
+              <strong>Сфера наукових інтересів: </strong>
+              {{ spivrobitnik.interest }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<app-footer></app-footer>

@@ -1,0 +1,149 @@
+/* NEWS */
+.news__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.news__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.news__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.news__content{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+    line-height: 20px;
+}
+
+.news__item{
+    width: 100%;
+    background-color: rgba(0, 8, 255, 0.052);
+    border-radius: 20px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.news__item:hover{
+    transition: 0.5s;
+    background-color: rgba(17, 0, 255, 0.152);
+}
+
+.news__item--title{
+    margin-top: 10px;
+    font-size: 30px;
+    color: var(--main_color);
+}
+
+.news__item--img{
+    margin: 10px;
+    height: 170px;
+    width: 300px;
+    border-radius: 30px;
+}
+
+.news__item--link{
+    cursor: pointer;
+}
+
+.news__item--date{
+    font-style: italic;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .news__title{
+        font-size: 35px;
+    }
+
+    .news__subtitle {
+        font-size: 23px;
+    }
+
+    .news__item{
+        flex-direction: column;
+    }
+
+    .news__item--picture{
+       align-self: center;
+    }
+
+    .news__item--img{
+        height: auto;
+        width: 400px;
+    }
+
+    .news__item--content{
+        margin-left: 15px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .news__title{
+        font-size: 30px;
+    }
+
+    .news__item--title{
+        font-size: 25px;
+    }
+
+    .news__item--date{
+        font-size: 14px;
+    }
+
+    .news__item--text{
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .news__wrapper{
+        width: 95%;
+    }
+
+    .news__item--img{
+        width: 300px;
+    }
+
+    .news__item{
+        margin-bottom: 40px
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .news__item--img{
+        width: 250px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .news__item--img{
+        width: 220px;
+    }
+
+    .news__item{
+        margin-bottom: 20px
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .news__item--img{
+        width: 150px;
+    }
+}

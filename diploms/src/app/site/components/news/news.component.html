@@ -1,0 +1,37 @@
+<!--HEADER-->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<section class="news">
+  <div class="wrapper news__wrapper">
+    <h1 class="title news__title">Новини</h1>
+    <hr class="news__hr" />
+    <h2 class="title news__subtitle">Будь в курсі всіх подій</h2>
+
+    <div class="content news__content">
+      <div class="news__items">
+        <!-- <div class="news__item" *ngFor="let news of newsList$ | async"> -->
+        <div class="news__item" *ngFor="let news of newsList">
+          <div class="news__item--picture">
+            <img
+              class="news__item--img"
+              [src]="news.img"
+            />
+          </div>
+          <div class="news__item--content">
+            <h1 class="news__item--title">
+              <a class="link news__item--link">{{
+                news.title
+              }}</a>
+            </h1>
+            <div class="news__item--date">{{ news.date }}</div>
+            <p class="text news__item--text">{{ news.text }} </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<app-footer></app-footer>

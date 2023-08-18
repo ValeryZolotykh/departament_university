@@ -1,0 +1,140 @@
+/* ABITURIENT */
+.abiturient__wrapper{
+    background-color: #fff;
+    width: 75%;
+    border-radius: 40px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+}
+
+.abiturient__title{
+    margin-top: 50px;
+    padding-top: 30px;
+    font-size: 40px;
+    text-align: center;
+}
+
+.abiturient__subtitle{
+    text-align: center;
+    font-size: 28px;
+}
+
+.abiturient__hr{
+    font-weight: 900;
+}
+
+.abiturient__content{
+    margin-top: 50px;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.abiturient__text--intro{
+    background-color: rgba(0, 98, 255, 0.188);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.abiturient__menu-items{
+    list-style: disc;
+    margin-bottom: 70px;
+    margin-top: 30px;
+}
+
+.abiturient__menu-item{
+    margin-bottom: 15px;
+    color: var(--main_color);
+}
+
+.abiturient__menu-item:hover{
+    transition: 0.6s;
+    text-decoration: underline;
+    color: var(--hover_link);
+}
+
+.abiturient__info-item{
+    margin-bottom: 80px;
+}
+
+.abiturient__info-subtitle{
+    font-size: 30px;
+    margin-bottom: 25px;
+    font-weight: bolder;
+}
+
+.abiturient__info-content{
+    line-height: 30px;
+}
+
+.abiturient__table-prohbal{
+    overflow-x: scroll;
+}
+
+.abiturient__info-proh-bal{
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 20px;
+}
+
+.abiturient__info-proh-bal th, td {
+    border: 1px solid #9e9e9e;
+    padding: 8px;
+}
+
+.abiturient__info-proh-bal th{
+    background-color: #dddddd;
+}
+
+.abiturient__link{
+    color: var(--hover_link);
+    font-weight: bold;
+}
+
+.abiturient__additional-text{
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 179, 0.464);
+    line-height: 20px;
+    font-weight: 800;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) {
+    .abiturient__title{
+        font-size: 35px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .abiturient__title{
+        font-size: 30px;
+    }
+
+    .abiturient__info-subtitle{
+        font-size: 23px;
+        margin-bottom: 17px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .abiturient__wrapper{
+        width: 95%;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .abiturient__content{
+        font-size: 17px;
+    }
+
+    .abiturient__info-content{
+        line-height: 22px;
+    }
+
+    .abiturient__emoji{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,72 @@
+<!--HEADER -->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<section class="feedback">
+  <div class="wrapper feedback__wrapper">
+    <h1 class="title feedback__title">Зворотній зв'язок</h1>
+    <hr class="feedback__hr" />
+    <h2 class="title feedback__subtitle">Зв'яжися з нами</h2>
+
+    <div class="content feedback__content">
+      <p class="feedback__text">
+        📞 Залиш свій номер та питання - ми з радістю зателефонуємо вам!
+        <br /><br />
+        Наші контакти можете знайти тут
+        <a class="link feedback__link" routerLink="/contacts" target="_blank"
+          >Контакти</a
+        >
+      </p>
+      <div class="feedback__forma">
+        *Телефон:
+        <input
+          id="telephone"
+          class="feedback__input"
+          [formControl]="valueControl"
+          [ngClass]="{
+            'invalid-input':
+              valueControl.invalid &&
+              (valueControl.dirty || valueControl.touched)
+          }"
+        />
+        <div
+          class="feedback__errors"
+          *ngIf="
+            valueControl &&
+            valueControl.errors &&
+            valueControl.invalid &&
+            (valueControl.dirty || valueControl.touched)
+          "
+        >
+          <div *ngIf="valueControl.errors['required']">Значення пусте</div>
+          <div *ngIf="valueControl.errors['minlength']">
+            Значення повино бути 6+ символів
+          </div>
+          <div *ngIf="valueControl.errors['maxlength']">
+            Значення повино бути не більш 13 символів
+          </div>
+          <div *ngIf="valueControl.errors['pattern']">Тільки цифри</div>
+        </div>
+        Запитання:
+        <textarea id="questions" class="feedback__questions"></textarea>
+        <button
+          class="btn feedback__btn"
+          (click)="sendQuestions()"
+          (enter)="sendQuestions()"
+          [disabled]="valueControl.invalid"
+        >
+          Відправити
+        </button>
+        <div class="feedback__notificition--success">
+          Ваш запрос відправлено!
+        </div>
+        <div class="feedback__notificition--fail">
+          Cталась помилки! Спробуй ще через декілька хвилин
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<app-footer></app-footer>

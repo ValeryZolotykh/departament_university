@@ -1,0 +1,27 @@
+<!--HEADER-->
+<app-header></app-header>
+
+<!--MAIN CONTENT-->
+<section class="news-item">
+  <div class="wrapper news-item__wrapper">
+    <h1 class="title news-item__title">{{ title }}</h1>
+
+    <div class="content news-item__content">
+      <p class="news-item__date">Дата: {{ date }}</p>
+      <div class="news-item__photo">
+        <img
+          *ngIf="isPhoto"
+          class="news-item__img"
+          src="{{ img_url }}"
+          alt="news_photo"
+        />
+      </div>
+      <p class="text news-item__text" *ngFor="let paragraph of paragraphs">
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+</section>
+
+<!--FOOTER-->
+<app-footer></app-footer>

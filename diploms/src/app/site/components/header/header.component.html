@@ -1,0 +1,122 @@
+<!--HEADER-->
+<header class="header header__big-size">
+  <div class="wrapper header__wrapper">
+    <nav class="header__menu">
+      <ul class="header__menu--items">
+        <li class="header__menu--item">
+          <a routerLink="/abiturient"> АБІТУРІЄНТУ </a>
+        </li>
+        <li class="header__menu--item">
+          <div class="menu__items--dropdown">
+            <h1 class="dropdown__title">НАВЧАННЯ ▼</h1>
+            <div class="dropdown__content">
+              <a class="dropdown__link" routerLink="/bakalavr">Бакалаврат</a>
+              <a class="dropdown__link" routerLink="/magistr">Магістратура</a>
+              <a class="dropdown__link" routerLink="/phd">PhD</a>
+              <a class="dropdown__link" routerLink="/laboratories"
+                >Лабораторна база та проекти</a
+              >
+              <a class="dropdown__link" routerLink="/news">Новини</a>
+              <a class="dropdown__link" routerLink="/studlife"
+                >Студентське життя</a
+              >
+              <a class="dropdown__link" routerLink="/docs">Документи</a>
+            </div>
+          </div>
+        </li>
+
+        <li class="header__menu--item">
+          <a routerLink="/science"> НАУКА </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="/history"> ІСТОРІЯ </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="">
+            <img
+              class="header__logo"
+              src="../../../../assets/img/logo_header.png"
+              alt="logo-ksu"
+            />
+          </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="/kafedra"> СПІВРОБІТНИКИ </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="/vidguki"> ВІДГУКИ </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="/contacts"> КОНТАКТИ </a>
+        </li>
+        <li class="header__menu--item">
+          <a routerLink="/feedback">
+            ЗВОРОТНІЙ <br />
+            ЗВ'ЯЗОК
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<header id="header__small" class="header-small-size header__small-size">
+  <div class="wrapper header__wrapper">
+    <nav class="header__menu-small-size">
+      <a routerLink="">
+        <img
+          class="header__logo--small-size"
+          src="../../../../assets/img/lg.png"
+          alt="logo-ksu"
+        />
+      </a>
+
+      <div class="menu__items--dropdown--small-size">
+        <button class="btn btn-header-menu" (click)="changeShowMenu()">
+          <img class="logo-menu" src="../../../../assets/img/menu.png" /> М Е Н
+          Ю
+        </button>
+        <button *ngIf="showMenu" class="btn closed__menu" (click)="closeMenu()">
+          <img class="logo-menu" src="../../../../assets/img/close.png" /> М Е Н
+          Ю
+        </button>
+        <div id="1" *ngIf="showMenu" class="dropdown__content--small-size">
+          <a class="dropdown__link--small-size" routerLink="/abiturient"
+            >Aбітурієнту</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/bakalavr"
+            >Бакалаврат</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/magistr"
+            >Магістратура</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/phd">PhD</a>
+          <a class="dropdown__link--small-size" routerLink="/laboratories"
+            >Лабораторна база та проекти</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/studlife"
+            >Студентське життя</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/docs">Документи</a>
+          <a class="dropdown__link--small-size" routerLink="/science">Наука</a>
+          <a class="dropdown__link--small-size" routerLink="/news">Новини</a>
+          <a class="dropdown__link--small-size" routerLink="/history"
+            >Історія</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/kafedra"
+            >Співробітники</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/vidguki"
+            >Відгуки</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/contacts"
+            >Контакти</a
+          >
+          <a class="dropdown__link--small-size" routerLink="/feedback"
+            >Зворотній зв'язок</a
+          >
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

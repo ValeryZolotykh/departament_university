@@ -1,0 +1,266 @@
+/* HEADER */
+.header{
+    background-color: var(--main_color);
+}
+
+.header__small-size{
+    display: none;
+}
+
+.header__wrapper{
+    height: 83px;
+}
+
+.header__menu--items{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.header__menu--item{
+    text-align: center;
+    margin-left: 3%; 
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+.header__logo{
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+}
+
+.menu__items--dropdown {
+    overflow: hidden;
+}
+
+.menu__items--dropdown:hover{
+    background-color: rgba(240, 248, 255, 0.148);
+    cursor: pointer;
+}
+  
+.dropdown__title {
+    padding: 33px 10px;
+    font-weight: 900;
+}
+  
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: var(--main_color);
+    min-width: 100px;
+    z-index: 1;
+}
+  
+.dropdown__link {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 12px 10px;
+    text-align: left;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.dropdown__link:hover {
+    background-color: rgba(240, 248, 255, 0.148);
+}
+
+.menu__items--dropdown:hover .dropdown__content {
+    display: block;
+}
+
+/*SMALL SIZE OF HEADER*/
+.header-small-size{
+    height: 200px;   
+    background-color: var(--main_color);
+}
+
+.header__menu-small-size{
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo--small-size{
+    width: 250px;
+    height: 120px;
+}
+
+.btn-header-menu{
+    background-color: aliceblue;
+    height: 70px;
+    width: 100%;
+    border-radius: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.logo-menu{
+    width:25px;
+    height:25px;
+}
+
+.menu__items--dropdown--small-size{
+    overflow: hidden;
+    width: 100%;
+}
+
+.dropdown__content--small-size {
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    height: 350px;
+}
+  
+.dropdown__link--small-size {
+    width: 44%;
+    display: block;
+    color: var(--main_color);
+    padding: 14px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.dropdown__link--small-size:hover {
+    background-color: rgba(0, 27, 50, 0.236);
+}
+
+.closed__menu{
+    position: absolute;
+    left: 0;
+    background-color: aliceblue;
+    height: 70px;
+    width: 100%;
+    border-radius: 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (max-width: 1024px) { 
+    .header__menu--items{
+        font-size: 12px;
+    }
+    
+    .header__menu--item{
+        margin-left: 2%; 
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .header__wrapper{
+        height: 74px;
+    }
+
+    .header__menu--items{
+        font-size: 10px;
+    }
+
+    .header__logo{
+        width: 70px;
+        height: 70px;
+    }
+
+    .dropdown__title {
+        padding: 31px 10px;
+    }
+      
+    .dropdown__link {
+        padding: 9px 8px;
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .header__big-size{
+        display: none;
+    }
+
+    .header__small-size{
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header-small-size{
+        height: 170px;
+    }
+
+    .header__menu-small-size{
+        height: 170px;
+    }
+
+    .header__logo--small-size{
+        width: 200px;
+        height: 100px;
+    }
+    
+    .btn-header-menu{
+        height: 70px;
+        font-size: 25px;
+    }
+    
+    .logo-menu{
+        width:20px;
+        height:20px;
+    }
+
+    .dropdown__content--small-size {
+        height: 340px;
+    }
+    
+    .dropdown__link--small-size {
+        width: 40%;
+        padding: 13px;
+        font-size: 17px;
+    }
+
+    .closed__menu{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .dropdown__content--small-size {
+        height: 360px;
+    }
+    
+    .dropdown__link--small-size {
+        width: 40%;
+        padding: 13px;
+        font-size: 17px;
+    }
+
+    .closed__menu{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .dropdown__content--small-size {
+        height: auto;
+    }
+
+    .dropdown__content--small-size {
+        flex-flow: column nowrap;
+    }    
+    
+    .dropdown__link--small-size {
+        width: 100%;
+        padding: 12px;
+    }
+}
