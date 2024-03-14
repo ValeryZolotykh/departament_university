@@ -1,4 +1,4 @@
-# Graduate work - Department’s website of my University
+# Graduate work - Department’s website
 ⏳ *january 2023 - july 2023*
 
 ## ▪️ Task
